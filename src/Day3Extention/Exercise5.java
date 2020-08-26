@@ -15,8 +15,20 @@ public class Exercise5 {
     }
 
     // Uzrakstiet funkciju, kas atgriež masīvu ar visiem pozitīviem pāra skaitļiem no 2 līdz N
-//    public static int[] firstEvenNumbers(int n) {
-//    }
+    public static int[] firstEvenNumbers(int n) {
+        int arrayLengh = n / 2;
+        System.out.println(arrayLengh);
+        int[] numbers = new int[arrayLengh];
+        int counter = 0;
+        for (int i =1; i<=n; i++) {
+            if (i % 2 == 0){
+                numbers[counter] = i;
+                counter++;
+                }
+
+        }
+        return numbers;
+    }
 
     public static void main(String[] args) {
 
@@ -26,11 +38,11 @@ public class Exercise5 {
         numbers = firstNaturalNumbers(12);
         System.out.println(Arrays.toString(numbers));   // Izvadīs [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-//        numbers = firstEvenNumbers(5);
-//        System.out.println(Arrays.toString(numbers)); // Jāizvada [2, 4]
+        numbers = firstEvenNumbers(5);
+        System.out.println(Arrays.toString(numbers)); // Jāizvada [2, 4]
 
-//        numbers = firstEvenNumbers(12);
-//        System.out.println(Arrays.toString(numbers)); // Jāizvada [2, 4, 6, 8, 10, 12]
+        numbers = firstEvenNumbers(12);
+        System.out.println(Arrays.toString(numbers)); // Jāizvada [2, 4, 6, 8, 10, 12]
 
     }
 }

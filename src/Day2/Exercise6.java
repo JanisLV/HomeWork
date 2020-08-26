@@ -14,6 +14,6 @@ public class Exercise6 {
                 max = number;
             }
         }
-        System.out.println("Bigest number is: " + max);
+        System.out.println("Biggest number is: " + max);
     }
 }

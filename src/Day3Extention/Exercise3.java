@@ -13,14 +13,20 @@ public class Exercise3 {
     }
 
     // Uzrakstiet funkciju, atgriež masīva maksimālo elementu
-//    public static int max(int[] numbers) {
-//    }
+    public static int max(int[] numbers) {
+        int max = 0;
+        for (int i =0; i<=numbers.length-1; i++) {
+            if (max < numbers[i])
+                max = numbers[i];
+        }
+        return max;
+    }
 
     public static void main(String[] args) {
         int[] numbers = {2, 8, 5, 0};
 
         System.out.println(sum(numbers));   // Izvadīs 15
 
-//        System.out.println(max(numbers));  // Jāizvada 8
+        System.out.println(max(numbers));  // Jāizvada 8
     }
 }
